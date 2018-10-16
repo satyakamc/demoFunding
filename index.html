@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Idea Funding DApp</title>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+ <style>
+  </style>
+</head>
+<body class="row">
+ <h1 class="text-center banner"><b>Ethereum Blockchain based Idea Funding DApp</b></font></h1>
+ <h3 class="text-center banner">DataBlock Technologies</h3>
+ <div class="container">
+ <div class="row margin-top-3">
+  <div class="col-sm-12">
+  <h3>Ideas looking for support</h3>
+  <strong>1. Education</strong>: Collected money to be used to educate needy children (website link for details).
+  <br>
+  <strong>2. Plantation</strong>: Support plantation drive to cut down on carbon footprint (website link for details).
+  <br>
+  <strong>3. Senior Citizens</strong>: Supporting senior citizens living in shelter homes (website link for details).
+  <br>
+  <strong>4. Re-Skilling</strong>: Train uneducated and unemployed people to be self sufficient (website link for details).
+  </div>
+ </div>
+ <div class="row margin-top-3">
+  <div class="col-sm-7">
+  <h2>Ideas</h2>
+  <div class="table-responsive">
+   <table class="table table-bordered">
+   <thead>
+    <tr>
+    <th bgcolor="#FF7F50"><font color="white">Title of the Idea</th>
+    <th bgcolor="#FF7F50"><font color="white">Total No. of Tokens Rececived</th>
+    </tr>
+   </thead>
+   <tbody id="candidate-rows">
+   </tbody>
+   </table>
+  </div>
+  </div>
+  <div class="col-sm-offset-1 col-sm-4">
+  <h2>Tokens</h2>
+  <div class="table-responsive">
+   <table class="table table-bordered">
+   <tr>
+    <th bgcolor="#FF7F50"><font color="white">Tokens Info</th>
+    <th bgcolor="#FF7F50"><font color="white">Value</th>
+   </tr>
+   <tr>
+    <td>Tokens For Sale</td>
+    <td id="tokens-total"></td>
+   </tr>
+   <tr>
+    <td>Tokens Sold</td>
+    <td id="tokens-sold"></td>
+   </tr>
+   <tr>
+    <td>Price Per Token</td>
+    <td id="token-cost"></td>
+   </tr>
+   <tr>
+    <td>Ether receivevd at the contract</td>
+    <td id="contract-balance"></td>
+   </tr>
+   </table>
+  </div>
+  </div>
+ </div>
+ <hr>
+ <div class="row margin-bottom-3">
+  <div class="col-sm-7 form">
+  <h2>Send Tokens</h2>
+  <div id="msg"></div>
+  <input type="text" id="candidate" class="form-control" placeholder="Enter the title of the idea"/>
+  <br>
+  <br>
+  <input type="text" id="vote-tokens" class="form-control" placeholder="Total no. of tokens to send"/>
+  <br>
+  <br>
+  <a href="#" onclick="App.voteForCandidate(); return false;" class="btn btn-primary">Send</a>
+  </div>
+  <div class="col-sm-offset-1 col-sm-4">
+  <div class="col-sm-12 form">
+   <h2>Get Tokens</h2>
+   <div id="buy-msg"></div>
+   <input type="text" id="buy" class="col-sm-8" placeholder="Number of tokens to buy"/>
+   <a href="#" onclick="App.buyTokens(); return false;" class="btn btn-primary">Buy</a>
+  </div>
+
+  </div>
+ </div>
+ </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
